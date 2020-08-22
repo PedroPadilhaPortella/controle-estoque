@@ -13,7 +13,7 @@
         <h3>Formulário de Cadastro dos Produtos</h3>
         <form style="margin-top: 20px" action="update.php" method="POST">
             <?php
-            include "connection.php";
+            include "config.php";
 
             $id = $_GET['id'];
             $sql = "SELECT * FROM `estoque` WHERE id = $id;";

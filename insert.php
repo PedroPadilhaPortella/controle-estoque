@@ -1,5 +1,5 @@
 <?php
-require_once "connection.php";
+require_once "config.php";
 
 $numero = $_POST['Nproduto'];
 $nomeProduto = $_POST['NomeProduto'];

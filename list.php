@@ -26,7 +26,7 @@
             </thead>
 
             <?php
-            require_once "connection.php";
+            require_once "config.php";
             $sql = "SELECT * FROM `estoque`;";
             $query = mysqli_query($connection, $sql);
 

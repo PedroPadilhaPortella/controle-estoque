@@ -1,6 +1,6 @@
 <?php
 
-require_once "connection.php";
+require_once "config.php";
 
 $id = $_POST['id'];
 //$numero = $_POST['numero_produto'];
