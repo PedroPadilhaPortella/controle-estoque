@@ -5,24 +5,27 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ef27dc1cf3.js" crossorigin="anonymous"></script>
     <title>Formulário de Cadastro</title>
 </head>
 
 <body>
-    <div class="container" id="tamanhoContainer" style="margin-top: 40px">
+    <a class="btn btn-primary" style="margin: 20px 0 0 140px;" href="index.php" role="button"><i class="fas fa-undo"></i>&nbsp;Voltar</a>
+
+    <div class="container" id="tamanhoContainer" style="margin-top: 10px">
         <h3>Formulário de Cadastro dos Produtos</h3>
         <form style="margin-top: 20px" action="insert.php" method="POST">
             <div class="form-group">
                 <label>N° do Produto</label>
-                <input type="number" class="form-control" name="Nproduto" placeholder="Insira o numero do Produto" require>
+                <input type="number" class="form-control" name="Nproduto" placeholder="Insira o numero do Produto" required>
             </div>
             <div class="form-group">
                 <label>Nome do Produto</label>
-                <input type="texto" class="form-control" name="NomeProduto" placeholder="Insira o nome do Produto" autocomplete="off" require>
+                <input type="texto" class="form-control" name="NomeProduto" placeholder="Insira o nome do Produto" autocomplete="off" required>
             </div>
             <div class="form-group">
                 <label>Quantidade</label>
-                <input type="number" class="form-control" name="quantidade" placeholder="Insira a Quantidade" min="0" require>
+                <input type="number" class="form-control" name="quantidade" placeholder="Insira a Quantidade" min="0" required>
             </div>
             <div class="form-group">
                 <label>Categorias</label>
@@ -44,7 +47,7 @@
                     <option>Fornecedor 5</option>
                 </select>
             </div>
-            <div style="text-align: right">
+            <div style="text-align: right; margin: 20px">
                 <button type="submit" id="submit" class="btn">Cadastrar</button>
             </div>
         </form>

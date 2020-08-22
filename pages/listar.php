@@ -10,8 +10,10 @@
 </head>
 
 <body>
-    <div class="container" style="margin-top: 40px;">
-        <h3 style="padding: 30px; text-align: center;">Lista de Produtos</h3>
+
+    <div class="container" style="margin-top: 20px;">
+    <a class="btn btn-primary" href="index.php" role="button"><i class="fas fa-undo"></i>&nbsp;Voltar</a>
+        <h3 style="padding: 20px; text-align: center;">Lista de Produtos</h3>
 
         <table class="table">
             <thead>
@@ -52,6 +54,10 @@
                 <?php } ?>
                 </tr>
         </table>
+        <div style="text-align: right;">
+            
+            <a class="btn btn-success right" href="add.php" role="button"><i class="fas fa-plus-circle"></i>&nbsp;Adicionar Novo</a>
+        </div>
     </div>
 
 
