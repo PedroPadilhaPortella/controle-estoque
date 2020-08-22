@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <script src="https://kit.fontawesome.com/ef27dc1cf3.js" crossorigin="anonymous"></script>
     <title>Listagem de Produtos</title>
 </head>
@@ -12,7 +12,7 @@
 <body>
 
     <div class="container" style="margin-top: 20px;">
-    <a class="btn btn-primary" href="index.php" role="button"><i class="fas fa-undo"></i>&nbsp;Voltar</a>
+    <a class="btn btn-primary" href="../index.php" role="button"><i class="fas fa-undo"></i>&nbsp;Voltar</a>
         <h3 style="padding: 20px; text-align: center;">Lista de Produtos</h3>
 
         <table class="table">
@@ -28,7 +28,7 @@
             </thead>
 
             <?php
-            require_once "config.php";
+            require_once "../src/config.php";
             $sql = "SELECT * FROM `estoque`;";
             $query = mysqli_query($connection, $sql);
 
@@ -47,22 +47,18 @@
                     <td><?php echo $quantidade ?></td>
                     <td><?php echo $fornecedor ?></td>
                     <td>
-                        <a class="btn btn-warning btn-sm" href="updateForm.php?id=<?php echo $id; ?>" role="button"><i class="far fa-edit"></i>&nbsp;Editar</a>
+                        <a class="btn btn-warning btn-sm" href="editar.php?id=<?php echo $id; ?>" role="button"><i class="far fa-edit"></i>&nbsp;Editar</a>
 
-                        <a class="btn btn-danger btn-sm" href="delete.php?id=<?php echo $id; ?>" role="button"><i class="far fa-trash-alt"></i>&nbsp;Exluir</a>
+                        <a class="btn btn-danger btn-sm" href="../src/delete.php?id=<?php echo $id; ?>" role="button"><i class="far fa-trash-alt"></i>&nbsp;Exluir</a>
                     </td>
                 <?php } ?>
                 </tr>
         </table>
-        <div style="text-align: right;">
+        <div style="text-align: right; margin-bottom: 30px;">
             
-            <a class="btn btn-success right" href="add.php" role="button"><i class="fas fa-plus-circle"></i>&nbsp;Adicionar Novo</a>
+            <a class="btn btn-success right" href="cadastrar.php" role="button"><i class="fas fa-plus-circle"></i>&nbsp;Adicionar Novo</a>
         </div>
     </div>
-
-
-
-    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 </body>
 
 </html>

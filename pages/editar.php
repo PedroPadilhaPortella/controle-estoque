@@ -3,17 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ef27dc1cf3.js" crossorigin="anonymous"></script>
     <title>Formulário de Cadastro</title>
 </head>
 
 <body>
-    <div class="container" id="tamanhoContainer" style="margin-top: 40px">
-        <h3>Formulário de Cadastro dos Produtos</h3>
-        <form style="margin-top: 20px" action="update.php" method="POST">
+<a class="btn btn-primary" style="margin: 20px 0 0 140px;" href="../pages/listar.php" role="button"><i class="fas fa-undo"></i>&nbsp;Voltar</a>
+<h3 style="text-align:center;">Formulário de Edição dos Produtos</h3>
+    <div class="container" id="tamanhoContainer" style="margin-top: 10px">
+        
+        <form style="margin-top: 20px" action="../src/update.php" method="POST">
             <?php
-            include "config.php";
+            include "../src/config.php";
 
             $id = $_GET['id'];
             $sql = "SELECT * FROM `estoque` WHERE id = $id;";
@@ -66,9 +69,6 @@
                 <?php } ?>
         </form>
     </div>
-
-
-    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 </body>
 
 </html>

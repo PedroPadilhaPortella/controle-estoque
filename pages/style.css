@@ -1,0 +1,9 @@
+/*ESTILOS CSS*/
+
+#tamanhoContainer{
+    width: 400px;
+}
+#submit{
+    background-color: #ff1168;
+    color: #ffffff;
+}
