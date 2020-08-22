@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+require_once "../head.php";
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/ef27dc1cf3.js" crossorigin="anonymous"></script>
-    <title>Formulário de Cadastro</title>
-</head>
+?>
 
 <body>
     <a class="btn btn-primary" style="margin: 20px 0 0 140px;" href="../index.php" role="button"><i class="fas fa-undo"></i>&nbsp;Voltar</a>

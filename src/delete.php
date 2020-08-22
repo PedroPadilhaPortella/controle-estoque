@@ -1,5 +1,5 @@
 <?php
-
+require_once "../head.php";
 require_once "config.php";
 
 $id = $_GET['id'];
@@ -8,14 +8,6 @@ $sql = "DELETE FROM `estoque_produtos`.`estoque` WHERE (`id` = '$id');";
 $delete = mysqli_query($connection, $sql);
 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
-</head>
 
 <body>
     <div class="container" style="width: 400px;">

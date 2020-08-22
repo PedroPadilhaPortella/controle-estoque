@@ -1,4 +1,5 @@
 <?php
+require_once "../head.php";
 require_once "config.php";
 
 $numero = $_POST['Nproduto'];
@@ -12,8 +13,6 @@ $sql = "INSERT INTO `estoque_produtos`.`estoque` (`numero_produto`, `nome_produt
 $insert = mysqli_query($connection, $sql);
 
 ?>
-
-<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
 
 <div class="container" style="width: 600px; margin-top: 40px; text-align: center;">
     <h4>Produto Adicionado com Sucesso!</h4>
