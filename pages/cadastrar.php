@@ -1,6 +1,6 @@
 <?php
 require_once "../head.php";
-
+require_once "../src/config.php";
 ?>
 
 <body>
@@ -24,21 +24,33 @@ require_once "../head.php";
             <div class="form-group">
                 <label>Categorias</label>
                 <select class="form-control" name="categoria" id="exampleFormControlSelect1">
-                    <option>Hardware</option>
-                    <option>Software</option>
-                    <option>Periféricos</option>
-                    <option>Jogos</option>
-                    <option>Celulares</option>
+                    <?php
+
+                    $sql_categoria = "SELECT * FROM `estoque_produtos`.`categorias` order by nome ASC";
+                    $search_categoria = mysqli_query($connection, $sql_categoria);
+
+                    while ($array = mysqli_fetch_array($search_categoria)) {
+                        $id = $array['id'];
+                        $categoria = $array['nome'];
+                    ?>
+                        <option><?php echo $categoria ?></option>
+                    <?php } ?>
                 </select>
             </div>
             <div class="form-group">
                 <label>Fornecedor</label>
                 <select class="form-control" name="fornecedor">
-                    <option>Fornecedor 1</option>
-                    <option>Fornecedor 2</option>
-                    <option>Fornecedor 3</option>
-                    <option>Fornecedor 4</option>
-                    <option>Fornecedor 5</option>
+                    <?php
+
+                    $sql_fornecedor = "SELECT * FROM `estoque_produtos`.`fornecedores` order by nome ASC";
+                    $search_fornecedor = mysqli_query($connection, $sql_fornecedor);
+
+                    while ($array = mysqli_fetch_array($search_fornecedor)) {
+                        $id = $array['id'];
+                        $fornecedor = $array['nome'];
+                    ?>
+                        <option><?php echo $fornecedor ?></option>
+                    <?php } ?>
                 </select>
             </div>
             <div style="text-align: right; margin: 20px">
