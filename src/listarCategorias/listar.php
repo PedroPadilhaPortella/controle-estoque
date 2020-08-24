@@ -1,0 +1,47 @@
+<?php
+require_once "../config.php";
+require_once "../head.php";
+
+?>
+<body>
+
+    <a class="btn btn-primary" style="margin: 20px 0 0 140px;" href="../../index.php" role="button"><i class="fas fa-undo"></i>&nbsp;Voltar</a>
+    <div class="container" style="margin-top: 20px; width: 500px;">
+        <h3 style="padding: 20px; text-align: center;">Categorias</h3>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Ação</th>
+                </tr>
+            </thead>
+
+            <?php
+            
+            $sql = "SELECT * FROM `categorias`;";
+            $query = mysqli_query($connection, $sql);
+
+            while ($array = mysqli_fetch_array($query)) {
+                $id = $array['id'];
+                $categoria = $array['nome'];
+
+            ?>
+                <tr>
+                    <td><?php echo $categoria ?></td>
+                    <td>
+                        <a class="btn btn-warning btn-sm" href="editar.php?id=<?php echo $id; ?>" role="button"><i class="far fa-edit"></i>&nbsp;Editar</a>
+
+                        <a class="btn btn-danger btn-sm" href="delete.php?id=<?php echo $id; ?>" role="button"><i class="far fa-trash-alt"></i>&nbsp;Exluir</a>
+                    </td>
+                <?php } ?>
+                </tr>
+        </table>
+        <div style="text-align: right; margin-bottom: 30px;">
+            
+            <a class="btn btn-success right" href="cadastrar.php" role="button"><i class="fas fa-plus-circle"></i>&nbsp;Adicionar Novo</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 <?php
-require_once "head.php";
+require_once "src/head.php";
 
 ?>
 
@@ -12,7 +12,7 @@ require_once "head.php";
                     <div class="card-body">
                         <h5 class="card-title">Adicionar Novo Produto</h5>
                         <p class="card-text">Opção para adicionar produtos em nosso estoque</p>
-                        <a href="pages/cadastrar.php" class="btn btn-primary">Adicionar</a>
+                        <a href="src/cadastrarProduto/cadastrar.php" class="btn btn-primary">Adicionar</a>
                     </div>
                 </div>
             </div>
@@ -21,28 +21,28 @@ require_once "head.php";
                     <div class="card-body">
                         <h5 class="card-title">Lista de Produtos</h5>
                         <p class="card-text">Listar, editar e excluir produtos</p>
-                        <a href="pages/listar.php" class="btn btn-primary">Listar</a>
+                        <a href="src/listarProdutos/listar.php" class="btn btn-primary">Listar</a>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="row">
-        <div class="col-sm-6" style="margin-top: 20px;">
+            <div class="col-sm-6" style="margin-top: 20px;">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Adicionar Categorias</h5>
-                        <p class="card-text">Opção para adicionar categorias em nosso estoque</p>
-                        <a href="pages/categorias.php" class="btn btn-primary">Adicionar</a>
+                        <h5 class="card-title">Gerenciar Categorias</h5>
+                        <p class="card-text">Opção para gerenciar as categorias do estoque</p>
+                        <a href="src/listarCategorias/listar.php" class="btn btn-primary">Gerenciar</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6" style="margin-top: 20px;">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Adicionar Fornecedores</h5>
-                        <p class="card-text">Opção para adicionar fornecedores em nosso estoque</p>
-                        <a href="pages/fornecedores.php" class="btn btn-primary">Adicionar</a>
+                        <h5 class="card-title">Gerenciar Fornecedores</h5>
+                        <p class="card-text">Opção para gerenciar os fornecedores</p>
+                        <a href="src/listarFornecedores/listar.php" class="btn btn-primary">Gerenciar</a>
                     </div>
                 </div>
             </div>

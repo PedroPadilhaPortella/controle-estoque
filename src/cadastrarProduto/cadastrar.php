@@ -1,14 +1,14 @@
 <?php
 require_once "../head.php";
-require_once "../src/config.php";
+require_once "../config.php";
 ?>
 
 <body>
-    <a class="btn btn-primary" style="margin: 20px 0 0 140px;" href="../index.php" role="button"><i class="fas fa-undo"></i>&nbsp;Voltar</a>
+    <a class="btn btn-primary" style="margin: 20px 0 0 140px;" href="../../index.php" role="button"><i class="fas fa-undo"></i>&nbsp;Voltar</a>
     <h3 style="text-align:center;">Formulário de Cadastro dos Produtos</h3>
 
     <div class="container" id="tamanhoContainer" style="margin-top: 10px">
-        <form style="margin-top: 20px" action="../src/insert.php" method="POST">
+        <form style="margin-top: 20px" action="insert.php" method="POST">
             <div class="form-group">
                 <label>N° do Produto</label>
                 <input type="number" class="form-control" name="Nproduto" placeholder="Insira o numero do Produto" required>
@@ -23,7 +23,7 @@ require_once "../src/config.php";
             </div>
             <div class="form-group">
                 <label>Categorias</label>
-                <select class="form-control" name="categoria" id="exampleFormControlSelect1">
+                <select class="form-control" name="categoria">
                     <?php
 
                     $sql_categoria = "SELECT * FROM `estoque_produtos`.`categorias` order by nome ASC";
