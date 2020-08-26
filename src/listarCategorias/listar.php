@@ -5,7 +5,7 @@ require_once "../head.php";
 ?>
 <body>
 
-    <a class="btn btn-primary" style="margin: 20px 0 0 140px;" href="../../index.php" role="button"><i class="fas fa-undo"></i>&nbsp;Voltar</a>
+    <a class="btn btn-primary" style="margin: 20px 0 0 140px;" href="../landing/landing.php" role="button"><i class="fas fa-undo"></i>&nbsp;Voltar</a>
     <div class="container" style="margin-top: 20px; width: 500px;">
         <h3 style="padding: 20px; text-align: center;">Categorias</h3>
 

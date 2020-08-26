@@ -14,6 +14,6 @@ $insert = mysqli_query($connection, $sql);
     <h4>Categoria Adicionado com Sucesso!</h4>
     <div style="padding-top: 20px;">
         <a href="../listarCategorias/listar.php" role="button" class="btn btn-primary">Gerenciar Categorias</a>
-        <a href="../../index.php" role="button" class="btn btn-info">Voltar para o Menu</a>
+        <a href="../landing/landing.php" role="button" class="btn btn-info">Voltar para o Menu</a>
     </div>
 </div>

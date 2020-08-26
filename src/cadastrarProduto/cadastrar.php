@@ -4,7 +4,7 @@ require_once "../config.php";
 ?>
 
 <body>
-    <a class="btn btn-primary" style="margin: 20px 0 0 140px;" href="../../index.php" role="button"><i class="fas fa-undo"></i>&nbsp;Voltar</a>
+    <a class="btn btn-primary" style="margin: 20px 0 0 140px;" href="../landing/landing.php" role="button"><i class="fas fa-undo"></i>&nbsp;Voltar</a>
     <h3 style="text-align:center;">Formulário de Cadastro dos Produtos</h3>
 
     <div class="container" id="tamanhoContainer" style="margin-top: 10px">

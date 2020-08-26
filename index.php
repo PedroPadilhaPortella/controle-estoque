@@ -3,51 +3,25 @@ require_once "src/head.php";
 
 ?>
 
-<body>
-    <div class="container" style="margin-top: 100px">
-        <div class="row">
-
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Adicionar Novo Produto</h5>
-                        <p class="card-text">Opção para adicionar produtos em nosso estoque</p>
-                        <a href="src/cadastrarProduto/cadastrar.php" class="btn btn-primary">Adicionar</a>
-                    </div>
+<body style="background-color: #664499;">
+    <div class="container" id="divCont" style="width: 300px; margin-top: 200px; border-radius: 15px; border: 4px solid #663999; background-color: #662299">
+        <div style="padding: 10px;">
+            <center>
+                <img src="src/assets/cadeado.png" alt="cadeado" width="100px" height="100px">
+            </center>
+            <form action="">
+                <div class="form-group">
+                    <label style="font-size: 28px;">Usuário</label>
+                    <input type="text" name="usuario" class="form-control" placeholder="nome de usuario">
                 </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Lista de Produtos</h5>
-                        <p class="card-text">Listar, editar e excluir produtos</p>
-                        <a href="src/listarProdutos/listar.php" class="btn btn-primary">Listar</a>
-                    </div>
+                <div class="form-group">
+                    <label style="font-size: 28px;">Senha</label>
+                    <input type="password" name="senha" class="form-control" placeholder="nome de usuario" placeholder="senha">
                 </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-6" style="margin-top: 20px;">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Gerenciar Categorias</h5>
-                        <p class="card-text">Opção para gerenciar as categorias do estoque</p>
-                        <a href="src/listarCategorias/listar.php" class="btn btn-primary">Gerenciar</a>
-                    </div>
+                <div style="text-align: right; margin: 20px">
+                    <button type="submit" id="submit" class="btn btn-success">Entrar</button>
                 </div>
-            </div>
-            <div class="col-sm-6" style="margin-top: 20px;">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Gerenciar Fornecedores</h5>
-                        <p class="card-text">Opção para gerenciar os fornecedores</p>
-                        <a href="src/listarFornecedores/listar.php" class="btn btn-primary">Gerenciar</a>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 </body>
-
-</html>

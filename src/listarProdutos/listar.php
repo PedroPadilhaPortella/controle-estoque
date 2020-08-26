@@ -6,7 +6,7 @@ require_once "../head.php";
 <body>
 
     <div class="container" style="margin-top: 20px;">
-    <a class="btn btn-primary" href="../../index.php" role="button"><i class="fas fa-undo"></i>&nbsp;Voltar</a>
+    <a class="btn btn-primary" href="../landing/landing.php" role="button"><i class="fas fa-undo"></i>&nbsp;Voltar</a>
         <h3 style="padding: 20px; text-align: center;">Lista de Produtos</h3>
 
         <table class="table">
