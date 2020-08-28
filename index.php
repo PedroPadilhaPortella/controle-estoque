@@ -16,7 +16,7 @@ require_once "src/head.php";
                 </div>
                 <div class="form-group">
                     <label style="font-size: 28px;">Senha</label>
-                    <input type="password" name="senha" class="form-control" placeholder="nome de usuario" placeholder="senha">
+                    <input type="password" name="senha" class="form-control" placeholder="senha">
                 </div>
                 <div style="text-align: right; margin: 20px">
                     <button type="submit" id="submit" class="btn btn-success">Entrar</button>
