@@ -9,7 +9,7 @@ require_once "src/head.php";
             <center>
                 <img src="src/assets/cadeado.png" alt="cadeado" width="100px" height="100px">
             </center>
-            <form action="">
+            <form action="" method="POST">
                 <div class="form-group">
                     <label style="font-size: 28px;">Usuário</label>
                     <input type="text" name="usuario" class="form-control" placeholder="nome de usuario">

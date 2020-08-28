@@ -7,6 +7,8 @@ require_once "../head.php";
 
     <div class="container" id="divCont" style="width: 500px; margin-top: 20px; margin-bottom: 20px; border-radius: 15px; border: 4px solid gray; background-color: #077">
 
+        <a class="btn btn-primary" style="position: fixed; margin: 0 0 0 -300px;" href="../../index.php" role="button"><i class="fas fa-undo"></i>&nbsp;Voltar</a>
+
         <div style="padding: 10px;">
             <center>
                 <img src="../assets/cadeado.png" alt="cadeado" width="100px" height="100px">
@@ -55,9 +57,9 @@ require_once "../head.php";
 
     <script>
         function validarSenha(input) {
-            if(input.value != document.getElementById('txtSenha').value) {
+            if (input.value != document.getElementById('txtSenha').value) {
                 input.setCustomValidity("Repita a senha corretamente!")
-            }else{
+            } else {
                 input.setCustomValidity('')
             }
         }
