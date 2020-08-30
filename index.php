@@ -4,7 +4,7 @@ require_once "src/head.php";
 ?>
 
 <body style="background-color: #664499;">
-    <div class="container" id="divCont" style="width: 300px; margin-top: 200px; border-radius: 15px; border: 4px solid #663999; background-color: #662299">
+    <div class="container" id="divCont" style="width: 300px; margin-top: 150px; border-radius: 15px; border: 4px solid #663999; background-color: #662299">
         <div style="padding: 10px;">
             <center>
                 <img src="src/assets/cadeado.png" alt="cadeado" width="100px" height="100px">
@@ -23,5 +23,11 @@ require_once "src/head.php";
                 </div>
             </form>
         </div>
+    </div>
+    
+    <div style="color: white;">
+    <center>
+        <p>Não possui cadastro, clique <a href="src/cadastrarUsuario/cadastrar_usuario_externo.php" style="color: blue;">aqui</a></p>
+    </center>
     </div>
 </body>

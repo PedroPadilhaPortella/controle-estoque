@@ -14,7 +14,7 @@ require_once "../head.php";
                 <img src="../assets/cadeado.png" alt="cadeado" width="100px" height="100px">
             </center>
 
-            <form action="insertUser.php" method="POST">
+            <form action="insertExternUser.php" method="POST">
 
                 <div class="form-group">
                     <label style="font-size: 28px;">Nome de Usuário</label>
@@ -36,18 +36,7 @@ require_once "../head.php";
                     <input id="repetirSenha" type="password" name="senhausuario2" class="form-control" placeholder="Senha" required oninput="validarSenha(this)">
                     <p style="color: navajowhite;">As duas senhas precisam ser iguais</p>
                 </div>
-
-                <div class="form-group">
-                    <label style="font-size: 23px;">Nível de Acesso</label>
-                    <select name="acesso" class="form-control">
-                        <optgroup>
-                            <option value="1">Administrador</option>
-                            <option value="2">Funcionário</option>
-                            <option value="3">Conferente</option>
-                        </optgroup>
-                    </select>
-                </div>
-
+                
                 <div style="text-align: right; margin: 20px">
                     <button type="submit" class="btn btn-success">Login</button>
                 </div>
