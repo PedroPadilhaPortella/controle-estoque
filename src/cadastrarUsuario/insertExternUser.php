@@ -6,6 +6,7 @@ require_once "../scripts/password.php";
 $nomeUser = $_POST['nomeusuario'];
 $emailUser = $_POST['emailusuario'];
 $passwordUser = $_POST['senhausuario'];
+$nivelAcess = 0;
 $status = 'Inativo';
 
 $sql = "INSERT INTO usuarios (nome, email, senha, nivel, status) 

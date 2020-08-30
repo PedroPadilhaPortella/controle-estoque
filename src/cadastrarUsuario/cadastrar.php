@@ -43,7 +43,7 @@ require_once "../head.php";
                         <optgroup>
                             <option value="1">Administrador</option>
                             <option value="2">Funcionário</option>
-                            <option value="3">Conferente</option>
+                            <option value="3">Visitante</option>
                         </optgroup>
                     </select>
                 </div>
