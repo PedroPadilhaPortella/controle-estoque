@@ -4,6 +4,18 @@ require_once "../head.php";
 ?>
 
 <body>
+
+<?php
+
+$_SESSION['usuario'];
+
+
+if(!isset($_SESSION['usuario'])) {
+    header("Location: ../../index.php");
+}
+
+?>
+
     <div class="container" style="margin-top: 100px">
 
         <div class="row">

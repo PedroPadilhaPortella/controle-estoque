@@ -8,4 +8,5 @@ $nivel = $_GET['nivel'];
 $sql = "UPDATE `usuarios` SET `status` = 'Ativo', nivel = '$nivel' WHERE id = '$id'";
 
 $update = mysqli_query($connection, $sql);
-?>
+
+header("Location: gerenciar.php");

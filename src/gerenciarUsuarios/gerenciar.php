@@ -43,7 +43,7 @@ require_once "../head.php";
 
                         <a class="btn btn-dark btn-sm" href="aprovar_usuario.php?id=<?php echo $id; ?>&nivel=3" role="button"><i class="far fa-thumbs-up"></i>&nbsp;Visitante</a>
 
-                        <a class="btn btn-danger btn-sm" href="excluir_usuario.php?id=<?php echo $id; ?>&nivel=<?php echo $nivel; ?>" role="button"><i class="far fa-thumbs-down"></i>&nbsp;Rejeitar</a>
+                        <a class="btn btn-danger btn-sm" href="excluir_usuario.php?id=<?php echo $id; ?>" role="button"><i class="far fa-thumbs-down"></i>&nbsp;Rejeitar</a>
                     </td>
                 <?php } ?>
                 </tr>
