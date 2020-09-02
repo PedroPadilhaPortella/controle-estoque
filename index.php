@@ -1,15 +1,16 @@
 <?php
-require_once "src/head.php";
-
+require_once "head.php";
+session_start();
+session_destroy();
 ?>
 
 <body style="background-color: #664499;">
     <div class="container" id="divCont" style="width: 300px; margin-top: 150px; border-radius: 15px; border: 4px solid #663999; background-color: #662299">
         <div style="padding: 10px;">
             <center>
-                <img src="src/assets/cadeado.png" alt="cadeado" width="100px" height="100px">
+                <img src="assets/cadeado.png" alt="cadeado" width="100px" height="100px">
             </center>
-            <form action="validarLogin.php" method="POST">
+            <form action="login.php" method="POST">
                 <div class="form-group">
                     <label style="font-size: 28px;">Email</label>
                     <input type="text" name="email" class="form-control" placeholder="email do usuario">
@@ -27,7 +28,7 @@ require_once "src/head.php";
     
     <div style="color: white;">
     <center>
-        <p>Não possui cadastro, clique <a href="src/cadastrarUsuario/cadastrar_usuario_externo.php" style="color: blue;">aqui</a></p>
+        <p>Não possui cadastro, clique <a href="cadastrarUsuario/cadastrar_usuario_externo.php" style="color: blue;">aqui</a></p>
     </center>
     </div>
 </body>

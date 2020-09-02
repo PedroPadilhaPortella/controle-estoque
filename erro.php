@@ -1,5 +1,5 @@
 <?php
-require_once "src/head.php";
+require_once "head.php";
 ?>
 
 <body>
