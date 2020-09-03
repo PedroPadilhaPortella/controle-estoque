@@ -7,7 +7,7 @@ session_start();
 $login = $_SESSION['login'];
 
 if (!isset($login)) {
-    header('Location: index.php');
+    header('Location: ../index.php');
 }
 
 $sql = "select nivel from usuarios where email = '$login' and status = 'Ativo'";

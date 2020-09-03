@@ -3,6 +3,13 @@
 require_once "../head.php";
 require_once "../config.php";
 
+session_start();
+$login = $_SESSION['login'];
+
+if (!isset($_SESSION['login'])) {
+    header("Location: ../index.php");
+}
+
 $fornecedor = $_POST['fornecedor'];
 
 $sql = "INSERT INTO `estoque_produtos`.`fornecedores` (`nome`) VALUES ('$fornecedor')";

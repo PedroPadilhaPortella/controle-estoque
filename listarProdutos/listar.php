@@ -7,7 +7,7 @@ session_start();
 $login = $_SESSION['login'];
 
 if (!isset($login)) {
-    header('Location: index.php');
+    header('Location: ../index.php');
 }
 
 $sql = "select nivel from usuarios where email = '$login' and status = 'Ativo'";
@@ -55,7 +55,6 @@ $nivel = $array['nivel'];
                     <td><?php echo $categoria ?></td>
                     <td><?php echo $quantidade ?></td>
                     <td><?php echo $fornecedor ?></td>
-                    <?php if ($nivel == 1) { ?>
                         <td>
                             <a class="btn btn-warning btn-sm" href="editar.php?id=<?php echo $id; ?>" role="button"><i class="far fa-edit"></i>&nbsp;Editar</a>
 
@@ -63,7 +62,6 @@ $nivel = $array['nivel'];
                                 <a class="btn btn-danger btn-sm" href="delete.php?id=<?php echo $id; ?>" role="button"><i class="far fa-trash-alt"></i>&nbsp;Exluir</a>
                             <?php } ?>
                         </td>
-                    <?php } ?>
                 </tr>
             <?php } ?>
         </table>

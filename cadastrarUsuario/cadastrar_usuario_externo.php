@@ -1,6 +1,5 @@
 <?php
 require_once "../head.php";
-
 ?>
 
 <body style="background-color: #ccc;">

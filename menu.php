@@ -26,7 +26,7 @@ $nivel = $array['nivel'];
             $color = "gold";
         }
         if ($nivel == 3) {
-            $user = "Conferente";
+            $user = "Visitante";
             $color = "black";
         }
         ?>
